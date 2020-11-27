@@ -1,20 +1,14 @@
-import './App.css';
-import { Component } from 'react';
-import MyForm from './components/MyForm'
-import ValidationForm from './components/ValidationForm';
-import FetchRandomUser from './components/FetchRandomUser';
+import "./App.css";
+import { Component } from "react";
+import TodoList from "./components/TodoList";
 
 class App extends Component {
-  state = {
-    visible: true
-  };
-
-  render () {
+  render() {
     return (
-      <div className = "App">
-        <FetchRandomUser />
+      <div className="App">
+        <TodoList />
       </div>
-    )
+    );
   }
 }
 

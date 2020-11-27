@@ -2,7 +2,7 @@ import React from "react";
 
 export class Counter extends React.Component {
     state = {
-        count: 0
+      count: 0
     }
 
     increment = () => {
@@ -17,12 +17,13 @@ export class Counter extends React.Component {
         })
     }
 
+
     render () {
       return (
         <div>
-            <div>count: {this.state.count}</div>
-            <button onClick={this.increment}>increment</button>
-            <button onClick={this.decrement}>decrement</button>
+            <div>count: {this.props.count}</div>
+            <button onClick={this.props.increment}>increment</button>
+            <button onClick={this.props.decrement}>decrement</button>
         </div>
       )
     }
